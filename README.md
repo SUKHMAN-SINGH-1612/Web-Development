@@ -49,7 +49,3 @@ Contributions are welcome! If you have any improvements or additional resources 
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). Feel free to use the code and resources for your own learning purposes.
-
----
-
-Feel free to customize this README to better fit your specific learning goals and preferences. Happy coding! 🚀
