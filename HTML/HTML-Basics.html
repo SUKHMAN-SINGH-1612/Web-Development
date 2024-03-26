@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Basics</title>
+</head>
+<body>
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraphs -->
+    <p>This is a paragraph.</p>
+
+    <!-- Using Lorem for dummy text-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam provident illo itaque,<strong>This is strong</strong> suscipit ab accusantium, fugit tempora eveniet <em>This is emphasized</em> alias aut et esse sunt ratione. Consequatur veniam magni iure impedit.</p>
+
+    <!-- Line Breaks -->
+    <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Quo, iste. </p>
+
+    <!-- Horizontal Rule -->
+    <hr>
+
+    <!-- Links -->
+    <a href="https://www.google.com">Go to Google</a><br>
+    <!-- To open in new tab using attribute target-->
+    <a href="https://www.linkedin.com" target="_blank">Go to LinkedIn</a><br>
+    <a href="mailto:sukhmansinghbhogal@gmail.com">Email Me</a><br>
+    
+    <!-- Images -->
+    <img src="https://source.unsplash.com/500x500" alt="Random Image"><br>
+
+    <!-- Lists -->
+    <ul>
+        <li>Item 1 of Unordered List</li>
+        <li>Item 2 of Unordered List</li>
+        <l1>
+            <ul>
+                <li>Item 1 of Nested Unordered List</li>
+                <li>Item 2 of Nested Unordered List</li>
+            </ul>
+        </l1>
+        <li>Item 3 of Unordered List</li>
+    </ul>
+
+    <ol>
+        <li>Item 1 of Ordered List</li>
+        <li>
+            <ol>
+                <li>Item 1 of Nested Ordered List</li>
+                <li>Item 2 of Nested Ordered List</li>
+            </ol>
+        </li>
+        <li>Item 2 of Ordered List</li>
+        <li>Item 3 of Ordered List</li>
+    </ol>
+
+    <!-- Tables -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Employee ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sukhman</td>
+                <td>21</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>67890</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>22</td>
+                <td>54321</td>
+            </tr>
+        </tbody>    
+    </table>
+
+    <!-- Forms -->
+    <h3>HTML Forms</h3>
+    <form actions="backend.php"> <!-- action attribute is used to specify the file where the form data will be sent. Here the backend.php is an example -->
+        <div><label for='name'>Name: </label> <input type="text" name="myName" id="name"></div>
+        <div>Role: <input type="text" name="myRole"></div>
+        <div>Email: <input type="email" name="myEmail"></div>
+        <div>Date: <input type="date" name="myDate"></div>
+        <div>Bonus: <input type="number" name="myBonus"></div>
+        <div><label for="eligible">Are you eligible?: </label><input type="checkbox" name="myEligibilty" id="eligible"></div>
+        <div>Gender: <input type="radio" name="myGender">Male<input type="radio" name="myGender">Female</div>
+        <div>Write About Yourself <br><textarea name="myText" cols="30" rows="10"></textarea></div>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="volvo">Volvo</option>
+                <option value="bmw" selected>BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>
