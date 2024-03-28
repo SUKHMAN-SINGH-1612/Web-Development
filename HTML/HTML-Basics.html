@@ -92,27 +92,48 @@
     <!-- Forms -->
     <h3>HTML Forms</h3>
     <form actions="backend.php"> <!-- action attribute is used to specify the file where the form data will be sent. Here the backend.php is an example -->
-        <div><label for='name'>Name: </label> <input type="text" name="myName" id="name"></div>
-        <div>Role: <input type="text" name="myRole"></div>
-        <div>Email: <input type="email" name="myEmail"></div>
-        <div>Date: <input type="date" name="myDate"></div>
-        <div>Bonus: <input type="number" name="myBonus"></div>
-        <div><label for="eligible">Are you eligible?: </label><input type="checkbox" name="myEligibilty" id="eligible"></div>
-        <div>Gender: <input type="radio" name="myGender">Male<input type="radio" name="myGender">Female</div>
-        <div>Write About Yourself <br><textarea name="myText" cols="30" rows="10"></textarea></div>
+
+        <div><label for='name'>Name: </label> <input type="text" name="myName" id="name"></div> 
+
+        <div>Role: <input type="text" name="myRole"></div> <!-- type attribute is used to specify the type of input field -->
+
+        <div>Email: <input type="email" name="myEmail"></div> <!-- email type is used to specify that the input should be an email -->
+
+        <div>Date: <input type="date" name="myDate"></div> <!-- date type is used to specify that the input should be a date -->
+
+        <div>Bonus: <input type="number" name="myBonus"></div> <!-- number type is used to specify that the input should be a number -->
+
+        <div><label for="eligible">Are you eligible?: </label><input type="checkbox" name="myEligibilty" id="eligible"></div> <!-- checkbox type is used to specify that the input should be a checkbox -->
+
+        <div>Gender: <input type="radio" name="myGender">Male<input type="radio" name="myGender">Female</div> <!-- radio type is used to specify that the input should be a radio button -->
+
+        <div>Write About Yourself <br><textarea name="myText" cols="30" rows="10"></textarea></div> <!-- textarea is used to specify that the input should be a text area -->
         <div>
             <label for="car">Car</label>
-            <select name="myCar" id="car">
+            <select name="myCar" id="car"> <!-- select is used to specify that the input should be a dropdown -->
                 <option value="volvo">Volvo</option>
-                <option value="bmw" selected>BMW</option>
+                <option value="bmw" selected>BMW</option> <!-- selected attribute is used to set the default value -->
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
             </select>
         </div>
         <div>
-            <input type="submit" value="Submit Now">
-            <input type="reset" value="Reset Now">
+            <input type="submit" value="Submit Now"> <!-- submit type is used to specify that the input should be a submit button -->
+
+            <input type="reset" value="Reset Now"> <!-- reset type is used to specify that the input should be a reset button -->
         </div>
     </form>
+
+    <!-- Inline and Block Elements -->
+    <h3>Inline and Block Elements</h3>
+    <p>Inline elements are elements that do not start on a new line. They only take up as much width as necessary.</p>
+    <p style="border: 2px solid red">paragraph is a block</p> <p style= "border: 2px solid red">paragraph</p>
+    <span style="border: 2px solid blue">span is an inline</span> <span style="border: 2px solid blue">span</span>
+
+    <!-- Ids and Classes -->
+    <h3>Ids and Classes</h3>
+    <p>Ids are the indentifiers for the respective tag and unique</p>
+    <p>Classes are the identifiers for the respective tag and can be used multiple times</p>
+    <div id = "mainBox" class = "redbg"></div>
 </body>
 </html>
